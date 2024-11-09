@@ -1,0 +1,2772 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Farhat Naz</title>
+        <meta name="description" content="Farhat Naz" />
+        <meta name="keywords" content="Farhat Naz" />
+        <meta name="author" content="Farhat Naz" />
+
+        <!--  FavIcon  -->
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+
+        <!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+        <!-- Plugin Css -->
+        <link rel="stylesheet" href="assets/css/plugins.css">
+        <!-- Colors Css -->
+        <link rel="stylesheet" href="assets/css/color/green-color.css" id="option-color">
+        <!--  Custom Style CSS  -->
+        <link rel="stylesheet" href="assets/css/main.css">
+		<style>
+
+.hello {
+  opacity: 1 !important;
+}
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.full .content {
+  background-color: rgba(0,0,0,0.75) !important;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+.full .content img {
+  left: 50%;
+  transform: translate3d(0, 0, 0);
+  animation: zoomin 1s ease;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.byebye {
+  opacity: 0;
+}
+.byebye:hover {
+  transform: scale(0.2) !important;
+}
+.gallery {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-auto-rows: 8px;
+}
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+   box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+.gallery img:hover {
+  box-shadow: 0 0 32px #333;
+}
+.gallery .content {
+  padding: 4px;
+}
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.gallery .gallery-item:hover {
+  transform: scale(1.025);
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+@media (max-width: 400px) {
+    .pp{width:400px !important;}
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+@-moz-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+
+	</style>
+		<style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+   .pp{width:367px !important;padding-left:0px !important;}
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+ <script type="text/javascript">//<![CDATA[
+
+
+shortcut = {
+    all_shortcuts: {},
+      add: function (e, t, n) {
+        var r = {
+          type: "keydown",
+          propagate: !1,
+          disable_in_input: !1,
+          target: document,
+          keycode: !1
+        };
+        if (n) for (var i in r) "undefined" == typeof n[i] && (n[i] = r[i]);
+        else n = r;
+        r = n.target, "string" == typeof n.target && (r = document.getElementById(n.target)), e = e.toLowerCase(), i = function (r) {
+          r = r || window.event;
+          if (n.disable_in_input) {
+            var i;
+            r.target ? i = r.target : r.srcElement && (i = r.srcElement), 3 == i.nodeType && (i = i.parentNode);
+            if ("INPUT" == i.tagName || "TEXTAREA" == i.tagName) return
+          }
+          r.keyCode ? code = r.keyCode : r.which && (code = r.which), i = String.fromCharCode(code).toLowerCase(), 188 == code && (i = ","), 190 == code && (i = ".");
+          var s = e.split("+"),
+            o = 0,
+            u = {
+              "`": "~",
+              1: "!",
+              2: "@",
+              3: "#",
+              4: "$",
+              5: "%",
+              6: "^",
+              7: "&",
+              8: "*",
+              9: "(",
+              0: ")",
+              "-": "_",
+              "=": "+",
+              ";": ":",
+              "'": '"',
+              ",": "<",
+              ".": ">",
+              "/": "?",
+              "\\": "|"
+            }, f = {
+              esc: 27,
+              escape: 27,
+              tab: 9,
+              space: 32,
+              "return": 13,
+              enter: 13,
+              backspace: 8,
+              scrolllock: 145,
+              scroll_lock: 145,
+              scroll: 145,
+              capslock: 20,
+              caps_lock: 20,
+              caps: 20,
+              numlock: 144,
+              num_lock: 144,
+              num: 144,
+              pause: 19,
+              "break": 19,
+              insert: 45,
+              home: 36,
+              "delete": 46,
+              end: 35,
+              pageup: 33,
+              page_up: 33,
+              pu: 33,
+              pagedown: 34,
+              page_down: 34,
+              pd: 34,
+              left: 37,
+              up: 38,
+              right: 39,
+              down: 40,
+              f1: 112,
+              f2: 113,
+              f3: 114,
+              f4: 115,
+              f5: 116,
+              f6: 117,
+              f7: 118,
+              f8: 119,
+              f9: 120,
+              f10: 121,
+              f11: 122,
+              f12: 123
+            }, l = !1,
+            c = !1,
+            h = !1,
+            p = !1,
+            d = !1,
+            v = !1,
+            m = !1,
+            y = !1;
+          r.ctrlKey && (p = !0), r.shiftKey && (c = !0), r.altKey && (v = !0), r.metaKey && (y = !0);
+          for (var b = 0; k = s[b], b < s.length; b++) "ctrl" == k || "control" == k ? (o++, h = !0) : "shift" == k ? (o++, l = !0) : "alt" == k ? (o++, d = !0) : "meta" == k ? (o++, m = !0) : 1 < k.length ? f[k] == code && o++ : n.keycode ? n.keycode == code && o++ : i == k ? o++ : u[i] && r.shiftKey && (i = u[i], i == k && o++);
+          if (o == s.length && p == h && c == l && v == d && y == m && (t(r), !n.propagate)) return r.cancelBubble = !0, r.returnValue = !1, r.stopPropagation && (r.stopPropagation(), r.preventDefault()), !1
+        }, this.all_shortcuts[e] = {
+          callback: i,
+          target: r,
+          event: n.type
+        }, r.addEventListener ? r.addEventListener(n.type, i, !1) : r.attachEvent ? r.attachEvent("on" + n.type, i) : r["on" + n.type] = i
+      },
+      remove: function (e) {
+        var e = e.toLowerCase(),
+          t = this.all_shortcuts[e];
+        delete this.all_shortcuts[e];
+        if (t) {
+          var e = t.event,
+            n = t.target,
+            t = t.callback;
+          n.detachEvent ? n.detachEvent("on" + e, t) : n.removeEventListener ? n.removeEventListener(e, t, !1) : n["on" + e] = !1
+        }
+      }
+    },
+     shortcut.add("Ctrl+U",function(){
+    
+    }),
+    shortcut.add("Ctrl+S",function(){
+    
+    }),
+	shortcut.add("Ctrl+Shift+I",function(){
+    
+    }),
+    shortcut.add("PrtSc",function(){
+    
+    }),
+     shortcut.add("Meta+Alt+U",function(){
+    }),
+    shortcut.add("Ctrl+C",function(){
+    }),
+    shortcut.add("Meta+C",function(){
+    });
+
+
+  //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "dVSRM"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+    <script>
+      let allLines = []
+
+      window.addEventListener("message", (message) => {
+        if (message.data.console){
+          let insert = document.querySelector("#insert")
+          allLines.push(message.data.console.payload)
+          insert.innerHTML = allLines.join(";\r")
+
+          let result = eval.call(null, message.data.console.payload)
+          if (result !== undefined){
+            console.log(result)
+          }
+        }
+      })
+    </script>
+    <script type="text/javascript"> 
+function disableselect(e){  
+return false  
+}  
+
+function reEnable(){  
+return true  
+}  
+
+//if IE4+  
+document.onselectstart=new Function ("return false")  
+document.oncontextmenu=new Function ("return false")  
+//if NS6  
+if (window.sidebar){  
+document.onmousedown=disableselect  
+document.onclick=reEnable  
+}
+</script>
+    </head>
+    <body   data-spy="scroll" data-target="#scrollspy" data-offset="70" class="flat-demo mono">
+
+    <!--  Pre Loader  -->
+    <div id="overlayer"></div>
+    <span class="loader"></span>
+
+ 
+
+    <!--    Header Start    -->
+    <header id="header" class="header fixed-top" style="background: white;">
+        <nav id="scrollspy" class="navbar navbar-expand-lg header-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand font-weight-bold" href="#hero">Farhat <span class="base-color"> Naz</span></a>
+                <!--  Navbar Toggler Button Start -->
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="lni-menu size-md"></span>
+                </button>
+                <!--  Navbar Toggler Button End -->
+                <div class="collapse navbar-collapse" id="toggle-menu" style="background:white;">
+                    <ul class="navbar-nav nav-pills ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#about">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Education & Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Fellowships</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Conferences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#teaching">Teaching</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Professional Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ser">Services</a>
+                        </li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+
+    <!--   About Start   -->
+    <section id="about" class="section about pb-5 pt-6" style="background:rgba(70,130,180, 0.3) !important;">
+        <div class="container"> 
+            <div class="row">
+                
+                <div class="col-lg12 mt-4 mt-lg-0">
+				<div class="title-content">
+                                    <h3 class="base-color" style="color:black !important;">Welcome</h3>
+                                </div>
+                       <div class="personal-item " >
+                                   <!-- <h3 class="text-dark mt-4 mt-lg-0"><span class="base-color">UI/UX</span> Designer & Web Developer</h3><br>--><img class="pp" src="upload/DSC02628.JPG" alt="/" style="float:right;width:480px;margin:auto;padding-left:15px;padding-bottom:5px;">
+									<p style="text-align:justify;">I am Associate Professor and the Former Head of School of Liberal Arts (SoLA) at Indian Institute of Technology Jodhpur (IITJ). I am a development sociologist by academic training, with a focus on Sustainability, Policy and Governance processes.  <br><br> 
+									My research is interdisciplinary. I have a wide ranging research experience, in working on bilateral and multilateral research projects: funded by GIZ, ACIAR, IUCN, CGIAR, NWO, USAID, DFID, SICI, and Ministry of Minority Affairs, Govt. of India, to name a few. I have conducted development research in a diverse array of countries of South Asia (India, Bangladesh), South-East Asia (Vietnam, Thailand, Cambodia, Laos, Philippines, Indonesia) and Africa (Kenya, Cote d’Ivoire). I am also a member of ‘Civil Society Research Collective’ research team at the Wageningen University (Netherlands), Indian Institute of Technology Delhi (India) and Lehigh University (USA).  Furthermore, I am an affiliated faculty with the Center for Emerging Technologies for Sustainable Development, and Centre for Technology Foresight & Policy at IITJ. <br><br>
+									My professional strengths include not limited to, quantitative and qualitative research methods, and scenario analysis, with a seamless response to an array of policy, development and governance roadblocks, and examining pathways from the lens of development studies and economic sociology.
+									<br><br>
+									
+									</p>
+	<!--								
+<img src="https://qaftechnology.com/Farhat_Naz/assets/personal-image-05.png" alt="/" style="float:left;width:130px;">-->
+<p style="text-align:justify;margin-top:27px;">
+Prior to joining IITJ, I had worked at Wageningen University & Research, Netherlands; World Agroforestry Center (ICRAF), Vietnam/Kenya; International Water Management Institute (IWMI), Sri Lanka; Department of Sociology, Delhi School of Economics, New Delhi; and Kamala Nehru College for Women, University of Delhi, India.<br><br>
+Please feel free to contact me via email at: <span class="base-color"><b style="font-size: 1.1rem;font-weight: 600;">farhat@iitj.ac.in</b></span></p> <br>
+
+<p> <span  style="font-size: 1.1rem;font-weight: 600;">THEMATIC EXPERTISE AND RESEARCH INTEREST :</span> Natural Resource Management, Water Governance, Disaster Risk Reduction, Climate Risk Sustainability, Socio-Ecological Systems Thinking, Climate Risk Communication
+, Ecological Risk Assessment, Resilience, Poverty Reduction, Agroforestry, Agriculture, Gender, Social Exclusion, Caste, Sanitation, CSOs, Diaspora Studies, Governance Studies, Public Goods & Services Management<br><br><br>
+<b> <span  style="font-size: 1.1rem;font-weight: 600;">LANGUAGES :</span></b> English, German, Vietnamese, Hindi, Gujarati, Punjabi, Urdu,  Bengali
+</p>
+                                   <!-- <div class="row">
+                                        <div class="col-6 personal-info">
+                                            <ul class="list-unstyled pt-4">
+                                                <li>
+                                                    <p>Birthday : <span> 1 April 1990</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>Website : <span> www.retrina.com</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>Phone : <span> +123 456 7890</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>City : <span> New York, USA</span></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 personal-info">
+                                            <ul class="list-unstyled pt-4">
+                                                <li>
+                                                    <p>Age : <span> 30</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>Degree : <span> Master</span></p>
+                                                </li>
+                                                <li>
+                                                    <p>Mail : <span> <a href="https://retrina.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e4978589948881a4968190968d8a85ca878b89">[email&#160;protected]</a></span></p>
+                                                </li>
+                                                <li>
+                                                    <p>Freelance : <span> Available</span></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    About End    -->
+
+     
+	 
+
+     <!--  Service Start  -->
+    <section id="services" class="section services py-5" style="background:rgba(70,130,180, 0.3) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12"  style="padding-right: 0px; padding-left: 0px;">
+                    <div class="title-content mb-4">
+                        <h3 class="base-color" style="color:black !important;">Education</h3>
+						<div class="timeline-icon data-background" style="border: 1px solid #eee;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Item 01 -->
+               <div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p> <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;">Ph.D., Development Studies, </b>Centre for Development Research (ZEF), University of Bonn, Germany</p>
+                                            </div>
+                 </div>
+				 <div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p> <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;">M.A., Public Policy, </b>Crawford School of Public Policy, Australian National University, Canberra, Australia</p>
+                                               
+                                            </div>
+                                         
+                                        </div>
+										 <div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p> <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;">M.Phil., Sociology, </b>Centre for the Study of Social Systems, School of Social Sciences, Jawaharlal Nehru University, New Delhi, India</p>
+											
+                                            </div>
+                                          
+                                        </div>
+										 <div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p> <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;">M.A., Sociology, </b>Centre for the Study of Social Systems, School of Social Sciences, Jawaharlal Nehru University, New Delhi, India</p>
+                                                
+                                            </div>
+
+                                        </div>
+										 <div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p> <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;">B.A., (Honours) in Sociology, </b>Hindu College, University of Delhi, India</p>
+                                               
+                                            </div>
+                                           
+                                        </div>
+										 <div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p> <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;">High School and All India Senior Secondary School Examination, </b>Mater Dei Convent, New Delhi, India</p>
+                                               
+                                            </div>
+                                            
+                                        </div>
+				 
+			  </div>
+       </div>
+    </section>
+	<section id="services" class="section services "  style="background:rgba(70,130,180, 0.3) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="padding-right: 0px; padding-left: 0px;">
+                    <div class="title-content mb-4">
+                        <h3 class="base-color"  style="color:black !important;">Professional Experience</h3>
+						<div class="timeline-icon data-background" style="border: 1px solid #eee;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Item 01 -->
+                <div class="timeline-contents">
+                                            <div class="time-line-header">
+											 <p ><span style="font-size: 1.1rem;font-weight: 600;">2022 - Present : </span> Associate Professor of Sociology, <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;"> Indian Institute of Technology Jodhpur</b></p>
+                                            </div>
+                                            
+                                        </div>
+										<div class="timeline-contents">
+                                            <div class="time-line-header">
+											 <p ><span style="font-size: 1.1rem;font-weight: 600;">2022 - 2024 : </span> Head, School of Liberal Arts,<b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;"> Indian Institute of Technology Jodhpur</b></p>
+                                            </div>
+                                            
+                                        </div>
+               <div class="timeline-contents">
+                                            <div class="time-line-header">
+											 <p ><span style="font-size: 1.1rem;font-weight: 600;">2019 - 2022 :</span> Assistant Professor of Sociology, Department of Humanities and Social Sciences,<b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;"> Indian Institute of Technology Jodhpur</b></p>
+                                            </div>
+                                            
+                                        </div>
+
+										<div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p ><span style="font-size: 1.1rem;font-weight: 600;">2018 - 2019 :</span> Researcher, <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;"> Wageningen University & Research, Netherlands</b></p>
+											
+                                                
+                                            </div>
+                                           
+                                        </div>
+										
+										<div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p ><span style="font-size: 1.1rem;font-weight: 600;">2017 - 2017 :</span> Consultant, <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;"> Aga Khan Foundation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></p>
+											
+                                                
+                                            </div>
+                                           
+                                        </div>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+
+										<div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p ><span style="font-size: 1.1rem;font-weight: 600;">2014 - 2016 :</span> Post-Doctoral Fellow-Gender, <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;"> World Agroforestry Centre (ICRAF) HaNoi, Vietnam</b></p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+										 <div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p ><span style="font-size: 1.1rem;font-weight: 600;">2013 - 2014 :</span> Special Project Scientist (Social Science), <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;"> International Water Management Institute (IWMI), Colombo, Sri Lanka</b></p>
+                                               
+                                            </div>
+                                           
+                                        </div>
+
+										<div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p ><span style="font-size: 1.1rem;font-weight: 600;">2012 - 2012 :</span> Assistant Professor, <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;"> Department of Sociology, Delhi School of Economics, India</b></p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+										
+										 <div class="timeline-contents">
+                                            <div class="time-line-header">
+											<p ><span style="font-size: 1.1rem;font-weight: 600;">2005 - 2007 :</span> Guest Lecturer, <b class="timeline-title" style="font-size: 1.1rem;font-weight: 600;"> Department of Sociology, Kamala Nehru College for Women, University of Delhi, India</b></p>
+                                                
+                                            </div>
+                                          
+                                        </div>
+				 
+			  </div>
+       </div>
+    </section>
+    <!--   Service End   -->
+
+    <!-- Portfolio Start -->
+    <section id="portfolio" class="section portfolio py-5" style="background:rgba(70,130,180, 0.3) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12"  style="padding-right: 0px; padding-left: 0px;">
+                    <div class="title-content mb-4">
+                        <h3 class="base-color" style="color:black !important;">Fellowships, Honors & Awards</h3>
+						<div class="timeline-icon data-background" style="border: 1px solid #eee;"></div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="portfolio-items row">
+                <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2024 : </span> DAAD international seminar grant 2024 on 'Energy Justice in the Global South: A Discourse for a Sustainable Future'
+
+ </p>
+                                                
+                                            </div>
+                  </div>
+				  <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2023 : </span> DAAD international workshop grant 2023 on 'Climate Change a Socio-Geological Perspective'
+
+ </p>
+                                                
+                                            </div>
+                  </div>
+                <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2023 : </span> Global Forum and Agriculture, and International Green Week, Federal Ministry of Food and Agriculture, Government of Germany and DAAD
+
+ </p>
+                                                
+                                            </div>
+                  </div>
+                <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2022 : </span> DAAD (German Academic Exchange Service) South Asia Research Ambassador for 2022-2025
+
+ </p>
+                                                
+                                            </div>
+                  </div>
+                <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2022 : </span> IIT Jodhpur Institute Award for Moonshot Project Idea
+
+ </p>
+                                                
+                                            </div>
+                  </div>
+                <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2022 : </span> DAAD Visiting Grant, Georg-August-University Göttingen, Germany
+
+ </p>
+                                                
+                                            </div>
+                  </div>
+                <!-- Item 01 -->
+                <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2021 : </span> IIT Jodhpur Institute Award for Research Excellence - Young Researcher Award for Outstanding Contribution in Sociological Aspects of Water Management
+
+ </p>
+                                                
+                                            </div>
+                  </div>
+                 <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2021 : </span> Shastri Indo-Canadian Institute, Golden Jubilee Conference and Lecture Series Grant (GJCLSG)
+
+ </p>
+                                                
+                                            </div>
+                  </div>
+                 <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2019 : </span> DAAD Visiting Grant, TH Koln-University of Applied Sciences & Technische Universität Kaiserslautern, Germany </p>
+                                                
+                                            </div>
+                  </div>
+				   <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2018 : </span> DAAD, Visiting Grant, University of Siegen & Justus Liebig University Giessen, Germany </p>
+                                               
+                                            </div>
+                  </div>
+					 <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2018 : </span> GIZ (Deutsche Gesellschaft für Internationale Zusammenarbeit) Travel Grant, Gender Workshop, Germany </p>
+                                               
+                                            </div>
+                                         </div>
+
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2017 : </span> GIZ Travel Grant, Gender & Agriculture Workshop, Germany </p>
+                                               
+                                            </div>
+                                         </div>
+<div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2016 : </span> Endeavour Scholarship, Government of Australia </p>
+                                            </div>
+                                         </div>
+  <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2015 : </span> DAAD Visiting Grant, University of Freiburg, Germany</p>
+                                               
+                                            </div>
+                                         </div>
+<div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2015 : </span> Visiting Scholarship, Brown University, USA</p>
+                                               
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2015 : </span> GIZ Travel Grant, Climate Change & Agriculture Workshop, Germany</p>
+                                               
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2014 : </span> DAAD Visiting Grant, Humboldt University, Berlin, Germany </p>
+                                               
+                                            </div>
+                                         </div>
+  <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2014 : </span> ETSD 2014 SAGE Best Paper Award, International Sociological Association Conference </p>
+                                              
+                                            </div>
+                                         </div>
+<div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2014 : </span> Endeavour Post-Doctoral Fellowship, Government of Australia </p>
+                                               
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2013 : </span> GIZ Travel Grant, Water Governance Workshop, Germany</p>
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2013 : </span> DAAD Visiting Grant, United Nations University (UNU-EHS), Bonn & Cologne University of Applied Sciences, Germany</p>
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2013 : </span> DAAD Young Ambassador, DAAD and German Embassy, New Delhi, India </p>
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2013 : </span> DAAD Visiting Grant, Stuttgart-University of Hohenheim, Germany</p>
+                                            
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2013 : </span> DAAD Visiting Grant, University of Applied Sciences, Rottenburg, Germany</p>
+                                                
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2013 : </span> UNEP (United Nations Environment Programme) Asia-Pacific Leadership Scholarship, China</p>
+                                               
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2013 : </span> Economic and Social Research Council (ESRC) Visiting Grant, Institute of Development Studies, University of Sussex, UK</p>
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2012 : </span> DAAD Visiting Grant, Institute for Technology and Resources Management in the Tropics and Subtropics, Cologne, Germany</p>
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2011 : </span> Visiting Scholarship, Norwegian University of Life Sciences, Norway, awarded by International Society of Ecological Economics & the European Society of Ecological Economics </p>
+                                               
+                                            </div>
+                                         </div>
+<div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2010 : </span> Travel Grant by AGRINATURA Association: The European Alliance on Agriculture Knowledge for Development, for Visiting Swiss Federal Institute for Technology (ETH), Zurich, Switzerland</p>
+                                               
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2008 : </span> Merit certificate of PhD Disciplinary Doctoral Course, for securing 0.7 equal to 112 % (Excellent) in German Grading System </p>
+                                               
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2007 : </span> DAAD PhD Scholarship, Government of Germany </p>
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2007 : </span> Felix scholarship, SOAS (University of London) for Masters in Anthropological Research</p>
+                                               
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2004 : </span> University Grants Commission’s National Eligibility Test (NET) Examination, Sociology </p>
+                                                
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">- Senior School (10+2: CBSE): Merit certificate from All India Senior Secondary School Examination (CBSE) for highest score in Sociology at All India level</p>
+                                                
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">- All India Merit Scholarship for top performance in All India Senior Secondary School (CBSE) Exam</p>
+                                                
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">- Leaving Exam, with prizes in all exam subjects (Sociology, Economics, History, Political Sciences, English) from the Mater Dei Convent, New Delhi, India</p>
+                                                
+                                            </div>
+                                         </div>
+ <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">- Highest score (Ranked School Topper) in All India Senior Secondary School Examination (CBSE), in Humanities stream at Mater Dei Convent, New Delhi, India</p>
+                                               
+                                            </div>
+                                         </div>										 
+				</div>
+        </div>
+    </section>
+    <!--  Portfolio End  -->
+
+    <!-- Testimonial Start -->
+    <section id="testimonial" class="section testimonial py-5" style="background:rgba(70,130,180, 0.3) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12"   style="padding-right: 0px; padding-left: 0px;">
+                    <div class="title-content mb-4">
+                        <h3 class="base-color" style="color:black !important;">Publications</h3>
+						
+                                        <div class="timeline-icon data-background" style="border: 1px solid #eee;"></div>
+                    </div>
+                </div>
+            </div>
+           
+		   <div class="row">
+            <div class="col-lg-12">
+                 <!--<h3 class="base-color">Forthcoming</h3>
+                                   
+                                        <div class="timeline-contents">
+										
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz</span>, Special Issue on 'Water and Sanitation Policy', Guest Editor, <i>Indian Anthropologist</i>  (Published by Indian Anthropological Association). </p>
+                                               
+                                            </div>
+                                         </div>
+										 
+										 
+										 <br>
+									<br>-->
+			 <h3 class="base-color">Books</h3>
+                                   
+                                  
+                                        <div class="timeline-contents">
+										
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2014 : </span> <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz</span>, <i>The Socio-Cultural Context of Water: Study of a Gujarat Village</i>, Orient Blackswan, New Delhi. </p>
+                                               
+                                            </div>
+                                         </div>
+										 
+										 
+										 <br>
+									<br>
+			<h3 class="base-color" style="color:# !important;">Journals</h3>
+			
+										<div class="timeline-contents">
+										
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2024 : </span> Amir Sohel and <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz,</span> The Bishnoi: Revisiting Religious Environmentalism and Traditional Forest and Wildlife Management in the Thar Desert,  Environment & Society Portal, <i>Arcadia</i> (Summer 2024), no. 10. Rachel Carson Center for Environment and Society.</p>
+                                               
+                                            </div>
+                                         </div>
+										
+										<div class="timeline-contents">
+										
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2023 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span> and Rachel Philip, ‘Evolution of the Academic and Research Units at IIT Jodhpur: A Vibrant and Incredible Journey: Reflections on the First Anniversary of the School of Liberal Arts,’ Special Issue 15 years of IIT Jodhpur, Science and Education Magazine TechSpace: IITJ, Vol.4, Issue 1, August 2023. </p>
+                                               
+                                            </div>
+                                         </div>
+										 
+										
+										 
+										 <div class="timeline-contents">
+										
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2023 : </span> Accepted: Alok Ranjan, George Kodimattam Joseph, <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz</span>, Impact of Drinking Water, Sanitation, and Hygiene on Health: Insights from India’s 75th Round National Sample Survey, 2017-18, <i>Journal of Health Management,</i> 27 (3) (June, 2025 issue). </p>
+                                               
+                                            </div>
+                                         </div>
+		 
+		<div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2022 : </span> Amir Sohel, <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz</span> and  Bidhan Kanti Das, Who is Gaining, Who is Losing? Examining Benefit Sharing Mechanism (BSM) under REDD+ in India,<i> Environmental Sciences Proceedings of The 3rd International Electronic Conference on Forests — Exploring New Discoveries and New Directions in Forests, MDPI, Switzerland. </i><a href="https://sciforum.net/manuscripts/13057/manuscript.pdf">https://sciforum.net/manuscripts/ 13057/manuscript.pdf</a>
+ </p>
+                                            </div>
+                                         </div>
+		
+			<div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2022 : </span> George Kodimattam Joseph and <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz,</span> Intergenerational Fairness: Lessons from Pandemic Contexts,<i> Springer Nature Social Sciences, 212 (2):1-19 </i>
+ </p>
+                                            </div>
+                                         </div>
+			 <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2022 : </span> <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz,</span> Land Grabbing in Common Property Resources: How Women Social Positions Intersect Access to Natural Resources,<i> Sociological Bulletin </i>, 71(3): 371-395.
+ </p>
+                                            </div>
+                                         </div>
+                                         
+                                       
+                                         
+                                         
+                                       
+                                         
+                                         
+                                         <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2021 : </span> <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz</span> and George Kodimattam Joseph, Climate Change, Gender Vulnerability, and Disaster: Viewpoint on the Himalayan Region,<i> Eastern Anthropologist </i>,  74(4): 485-501. (UGC-Care Journal). 
+ </p>
+                                            </div>
+                                         </div>
+                                         
+                                          <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2021 : </span> <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz,</span> Editorial: ‘Landscape of Sanitation in India: Reflections on Swachhta’,
+Special Issue:<i> Indian Anthropologist</i>,  51(2): 1-6. <a href="https://www.jstor.org/stable/e27139726">https://www.jstor.org/stable/e27139726 </a>
+ </p>
+                                            </div>
+                                         </div>
+                                         	<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                      
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2021 : </span> George Kodimattam Joseph and <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, 'Water, Sanitation, and the Cry of the
+Excluded,’ Special Issue: <i>Indian Anthropologist,</i> 51(2): 7-21. <a href="https://www.jstor.org/stable/e27139726">https://www.jstor.org/stable/e27139726</a></p>
+                                            </div>
+                                         </div>
+                                    </div>
+			
+                                      <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2021 : </span> Hananto Kurnio, Alexander Fekete, <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz,</span> Celia Norf and Robert Jüpner, Resilience Learning and Indigenous Knowledge of Earthquake Risk in Indonesia,<i> International Journal of Disaster Risk Reduction</i>, 62.  <a href="https://www.sciencedirect.com/science/article/pii/S2212420921003848?via%3Dihub"> https://www.sciencedirect.com/science/article</a>
+ </p>
+                                            </div>
+                                         </div>
+                                         
+                                         
+                                         	<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                      
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2021 : </span> George Kodimattam Joseph and <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, 'Ethics, Professional Life, and the New Curriculum of IITJ', <i></i>Science and Education Magazine TechSpace: IITJ</i>, Vol.1, Issue 3, August 2021.</p>
+                                            </div>
+                                         </div>
+                                    </div>
+                                         
+                                     <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2020 : </span>  <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz</span> and George Kodimattam Joseph, Human Security Framework for COVID-19 Management: Lessons from the Kerala Model, Special Issue on
+
+Articulations of a Pandemic Researching and Navigating South Asia in the Times of Covid-19,  <i>Chakra: Nordic Journal of South Asian Studies, </i> (1): 37-46.
+ </p>
+                                            </div>
+                                         </div>
+                                         
+                                         
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2020 : </span> Margit van Wessel, <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz</span> and Sarbeswar Sahoo, Complementarities in CSO Collaborations: How Working with Diversity Produces Advantages, <i>VOLUNTAS: International Journal of Voluntary and Nonprofit Organizations.</i> <a href="https://doi.org/10.1007/s11266-020-00227-4">https://doi.org/10.1007/s11266-020-00227-4</a>
+ </p>
+                                            </div>
+                                         </div>
+                                 
+									
+									 <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2019 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Gender Division of Labour in Rural Gujarat: Hierarchy, Untouchable Women and the Case of Water, Special Issue: Ecology of Work,<i> Lahore Journal of Policy Studies</i>, 8(1): 37-58. </p>
+                                              
+                                            </div>
+                                         </div>
+                                    </div>	
+									
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2017 : </span> Marie-Charlotte Buisson, Jane Curnow and <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, The Gap between Water Management and Water Users: Gendered Disabilities from Southwest Bangladesh, Special Issue on Water Justice, Gender and Disability, <i>South Asian Water Studies Journal,</i> 5(4): 28-41.
+</p>
+                                            </div>
+                                         </div>
+                                    </div>	
+
+								<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                      
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2016 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Gendered Groundwater Market in Rural Gujarat, India: An Unequal and Patriarchal Space, <i>Indian Anthropologist,</i> 46(1): 31-46.</p>
+                                            </div>
+                                         </div>
+                                    </div>
+									
+									 <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2015 : </span> Carol Colfer, Delia Catacutan and <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Introduction: Contributions and Gaps in Gender and Agroforestry, Special Issue: Gender in Agroforestry, <i>International Forestry Review,</i> 17(S4): 1-10. </p>
+                                               
+                                            </div>
+                                         </div>
+                                    </div>	 <!--    Item 01   -->
+									
+									
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2015 : </span> Delia Catacutan and <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Gender Roles, Decision-Making and Challenges to Agroforestry Adoption in Northwest Vietnam, Special Issue: Gender in Agroforestry, <i>International Forestry Review,</i> 17(S4): 22-32.  </p>
+                                            </div>
+                                         </div>
+                                    </div>	
+
+								<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                      
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2015 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Water, Water Lords, and Caste: A Village Study from Gujarat, India, <i>Capitalism Nature Socialism,</i> 26(3): 89-101.</p>
+                                            </div>
+                                         </div> 
+                                    </div>
+									
+									 <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2015 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span> and Marie-Charlotte Buisson, Multiple Actors, Conflicting Roles and Perverse Incentives: The Case of Poor Operation and Maintenance of Coastal Polders in Bangladesh, In Humphreys, E., T.P. Tuong, M.C. Buisson, I. Pukinskis and M. Phillips (ed.), Revitalizing the Ganges Coastal Zone: Turning Science into Policy and Practices. Colombo, Sri Lanka: CGIAR Challenge Program on Water and Food (CPWF), pp. 147-161. </p>
+                                               
+                                            </div>
+                                         </div>
+                                    </div>	
+									
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2012 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Negotiating Identities in a Dangerous Field, <i>Economic and Political Weekly,</i> XLVII (25): 97-101.</p>
+                                               
+                                            </div>
+                                         </div>
+                                    </div>	
+
+								<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                      
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2007 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Swaminarayan Movement and Gujarati Diasporic Identity, <i>Man in India,</i> 87(1-2): 129-136.</p>
+                                                
+                                            </div> 
+                                         </div>
+                                    </div>
+									<br>
+									<br>
+									<h3 class="base-color">Book Chapters</h3>
+									
+									 <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2024 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Case Study 72: ‘Nizamuddin Auliya: The Saint of Basti Nizamuddin, New Delhi, India,’ In <i>Anna-Daan, Food Charity in India- Preaching and Practices,</i> (eds.) K.V.Raju and S. Manasi, pp. 604-610, Routledge: London and New York.</p>
+                                               
+                                            </div>
+                                         </div>
+                                    </div>		
+									
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2024 : </span> Kritika Mishra & <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Case Study 74: ‘Ajmer Dargah Sharif: Khawja Gharib Nawaz – (benefactor of the poor) Ajmer, Rajasthan, India,’ In <i>Anna-Daan, Food Charity in India- Preaching and Practices,</i> (eds.) K.V.Raju and S. Manasi, pp. 612- 616, Routledge: London and New York.</p>
+                                               
+                                            </div>
+                                         </div>
+                                    </div>
+									
+									 <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2018 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Adivasis Water Exchange and Caste-Based Water Lords: A Case of Groundwater Market in a Village of Gujarat, India, In. <i>Adivasi Rights and Exclusion in India,</i> (ed.) V.Srinivasa Rao, pp. 100-115, Routledge, India.</p>
+                                               
+                                            </div>
+                                         </div>
+                                    </div>		
+									
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2017 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Marie-Charlotte Buisson and Archishman Mitra, Downscaling Climate Change: Perceptions and Adaptive Behaviors of Rural Farmers in West Bengal, India, In. <i>Bottom-up approaches in Governance and Adaptation for Sustainable Development: Case Studies from India and Bangladesh, </i>(eds.) P.Swarnakar, S.Zavestoski and B. K.Pattnaik, pp. 233-254, Sage Publications, India.</p>
+                                               
+                                            </div>
+                                         </div>
+                                    </div>	
+									<br>
+									<br>
+									<h3 class="base-color" style="color:# !important;">Technical Reports/ Policy Briefs/ Manual/ Working Papers (Peer Reviewed)</h3>
+									
+							
+
+								<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                      
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2019 : </span> Margit van Wessel, Suparana Katyaini, Yogesh Mishra, <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, B. Rajeshwari, Rita Manchanda, Reetika Syal, Nandini Deo, Sarbeswar Sahoo, ‘Civil society dynamics: Shaping roles, navigating contexts’. Wageningen: Wageningen University & Research, Netherlands, Indian Institute of Technology Delhi and Lehigh University, USA.</p>
+                                            </div>
+                                         </div>
+                                    </div>
+									
+									 <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2019 : </span> Margit van Wessel, Nandini Deo, Rita Manchanda, Sarbeswar Sahoo, B. Rajeshwari, Suparana Katyaini, Reetika Syal, <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span> and Yogesh Mishra, ‘Starting from the South Advancing Southern leadership in civil society advocacy collaborations’. Wageningen: Wageningen University & Research, Netherlands, Indian Institute of Technology Delhi and Lehigh University, USA.</p>
+                                               
+                                            </div>
+                                         </div>
+                                    </div>		
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2018 : </span> Margit van Wessel, B. Rajeshwari, <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Yogesh Mishra, Suparana Katyaini, Sarbeswar Sahoo, Reetika Syal, Nandini Deo, ‘Navigating possibilities of collaboration. How representative roles of diverse CSOs take shape’. Wageningen: Wageningen University & Research, Netherlands, Indian Institute of Technology Delhi and Lehigh University, USA.
+</p>
+                                            </div>
+                                         </div>
+                                    </div>	
+
+								<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                      
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2016 : </span> Margaret Kroma, Ana Maria Paez Valencia, Patti Kristjanson, Evelyn Kiptot, Delia Catacutan, Christine Jost, <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, ‘Gender Strategy and Action Plan’. World Agroforestry Centre (ICRAF), Kenya.
+</p>
+                                            </div>
+                                         </div>
+                                    </div>
+									
+									 <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2015 : </span> Delia Catacutan and <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, ‘A Guide for Gender Mainstreaming in Agroforestry Research and Development’. World Agroforestry Centre (ICRAF), Vietnam.
+</p>
+                                            </div>
+                                         </div>
+                                    </div>		
+									
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2015 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, ‘India’ In: Grinda, C, Norf, C, Blatgen, T & Fekete, A (eds.), Country Profiles of Climate and Disaster Extremes in 16 Countries. Integrative Risk and Security Research, Volume 1, Cologne, pp 28-30.
+ </p>
+                                            </div>
+                                         </div>
+                                    </div>	
+	
+									
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2014 : </span> Marie-Charlotte Buisson, Bharat Sharma, <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, Archisman Mitra, Nandish Kenia, Nepal C. Dey, Ratnajit Saha and Anindita Bhattacharjee, Sibbir Ahmad, 'Food Security, Water Productivity and Poverty: Comparative study between India (West Bengal) and Bangladesh (Southwest region)'. A Joint Study Report by International Water Management Institute (IWMI) and BRAC- Dhaka submitted to ― ‘Ecosystems for Life: A Bangladesh- India Initiative’ of the International Union for Conservation of Nature (IUCN).
+ </p>
+                                            </div>
+                                         </div>
+                                    </div>
+                                    
+								<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                      
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2013 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>, ‘Nine Technical Reports: Situation Analysis Reports on Nine Polders of South West Bangladesh’. International Water Management Institute (IWMI), Sri Lanka and India
+</p>
+                                            </div>
+                                         </div>
+                                    </div>
+									
+									 <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2010 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span> and V.S.Saravanan, Water Management across Space and Time in India, ZEF Working Paper Series WP61 Bonn, Germany.</p>
+                                               
+                                            </div>
+                                         </div>
+                                    </div>	
+									<br>
+									<br>
+									<h3 class="base-color">Book Reviews</h3>
+									 <div class="timeline-contents"> 
+										 
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2023 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz, </span> (Book Review) Sumit Saurabh Srivastava, "Sulabh Sanitation in India: Issues, Challenges and Prospects", 2022; Indian Anthropologist, Jan- Dec 2023, 53(1-2), pp.186-188.</p>
+                                               
+                                            </div>
+                                         </div>
+										 
+										 <div class="timeline-contents">
+										
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2023 : </span> <span  style="font-size: 1.1rem;font-weight: 600;">Farhat Naz</span>, (Book Review) Maryam Wasif Khan, "Who Is a Muslim? Orientalism and Literary Populisms” <i>Sociological Bulletin</i>, <a href="https://journals.sagepub.com/doi/10.1177/00380229221151063">https://journals.sagepub.com/doi/10.1177/00380229221151063</a> </p>
+                                               
+                                            </div>
+                                         </div>
+									<br>
+									<br>
+									<h3 class="base-color">Blog/Newsletter</h3>
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2022 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span>. Guest Editor for the June Newsletter of the international forum of the ISTR Asia Pacific. Link: <a href="https://cdn.ymaws.com/www.istr.org/resource/resmgr/asia_pacific_network/istrapnewsletter_202206.pdf">https://cdn.ymaws.com/www.istr.org/resource/ resmgr/asia_pacific_network/ istrapnewsletter_202206.pdf</a></p>
+                                               
+												
+                                            </div>
+                                         </div>
+                                    </div>							 
+										 
+										 <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"><span style="font-size: 1.1rem;font-weight: 600;">2019 : </span> <span  style="font-size: 1.1rem;font-weight: 600;"> Farhat Naz</span> and Margit van Wessel. ‘Taking advantage of CSO diversity through collaboration’. Research programme investigating the new roles of Civil Society Organizations for inclusive development, with civil society advocacy collaborations in India. Link: <a href="https://includeplatform.net/taking-advantage-of-cso-diversity-through-collaboration/">https://includeplatform.net/taking-advantage-of-cso-diversity-through-collaboration/</a></p>
+                                               
+												
+                                            </div>
+                                         </div>
+                                    </div>							 
+										 
+										 
+										 
+										 
+										 
+										 
+										 
+										 
+										 
+										 
+										 
+										 
+										 
+                                    </div>	
+			</div>
+			</div>
+			
+        </div>
+    </section>
+    <!--  Testimonial End  -->
+
+     <!--  Blog Start  -->
+     <section id="blog" class="section blog py-5" style="background:rgba(70,130,180, 0.3) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="padding-right: 0px; padding-left: 0px;">
+                    <div class="title-content mb-4">
+                        <h3 class="base-color"  style="color:black !important;">Conferences, Seminars & Invited Presentations</h3>
+						
+                                        <div class="timeline-icon data-background" style="border: 1px solid #eee;"></div>
+                    </div>
+                </div>
+            </div>
+			
+            <div class="row">
+                <!--  Item 01 -->
+				<div class="col-lg-12">
+          <h3 class="base-color">Invited Talks</h3>
+          
+          <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2024 : </span> Keynote speaker in the Capacity Building Programme on ‘Sustainability of Water Sources in Rural Areas’, organized by IITJ-Jal Jeevan Mission ‘Centre for Sustainable Drinking Water’.</p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+									
+          <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2024 : </span> ZEF 25 International Conference, ‘Sustainable Solutions, Shared Futures: Development Research for the 21st Century’, at the University of Bonn, Germany.</p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+									
+          <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2024 : </span> New Approaches to Economy and Society: Exploring Popular Economy as a Research Agenda,’ a two-day workshop organized by School of Humanities and Social Sciences, IIT Mandi & Department of Humanities and Social Sciences, IISER Mohali in collaboration with The New Political Economy Initiative, IIT Bombay.</p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+          
+          <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2024 : </span>  Moderator at the Indo-German Conference on 'Innovation and Global Cooperation for Sustainability', SDG 13 Climate Change – Mitigating Climate Change through Knowledge Transfer and Capacity Building (I), at New Delhi, organised by DAAD and Government of Germany. </p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+									
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2024 : </span> Invited Speaker on ‘Community Engagement and Social Resilience’, in Navigating Change: Adapting to Hydroclimatic Extremes, seminar organised by the Department of Civil & Infrastructure Engineering, IIT Jodhpur. </p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+          
+          <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2024 : </span>  Invited Speaker on ‘Role of Research and Development in the Higher Education’, in the Malaviya Mission Teacher Training Programme: National Education Policy (NEP 2020) Orientation & Sensitization, organised by IUCAA (Inter-University Centre for Astronomy and Astrophysics) - Astronomy Centre for Educators, Pune, India.</p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+									
+									
+           <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2023 : </span>  Invited Speaker on ‘Ethics of Research: Data Sharing, Research Funding, and Publication’, in the CEP course on ‘Formulating Research Proposal’, organised by the Department of Humanities and Social Science, IIT Kharagpur.</p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    
+           <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2023 : </span>  Chaired a panel session on CoA_S2 'Critique of Anthropology Panel for Young Anthropologists' at the 19th IUAES- WAU World Anthropology Congress 2023, <i>Marginalities, Uncertainties, and World Anthropologies: Enlivening Past and Envisioning Future,</i> held at University of Delhi, India.</p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+          
+           <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2023 : </span>  Invited speaker and panel member at the Forum, titled “Public Sociology and Scholarly Communication", of XX ISA World Congress of Sociology, Melbourne, Australia, co-organized by RC24 and Routledge, Taylor and Francis Publishers</p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+          
+          <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2023 : </span>  Invited speaker at the 19th IUAES-WAU World Anthropology Congress Internship Program Lecture Series - Dynamics of Water: Through the Lens of Governance </p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+          
+          <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2023 : </span>  Invited Speaker at the University of Gottingen, Germany - India Forest Policy in Context of Climate Change: The Way Forward </p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+          
+          <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2022 : </span>  Invited Speaker at the ISTR (International Society for Third-Sector Research) Panel Discussion Webinar on Responding to Crises: Civil Society Experiences in Different Asia-Pacific Regimes – ‘The Case of the State Kerala in India' </p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    
+           <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2022 : </span> Invited Speaker at the 6th Faculty Development Program organized by UGC-HRDC (University Grant Commission-Human Resource Development Center) at University of Allahabad </p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+          
+		  <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2021 : </span> Second CIPSH International Academy on Chinese Cultures and Global Humanities Seminar on 'Global Challenges and Global Ethics in a time of Pandemic and Climate Change' organized by the Union Académique Internationale (UAI) in collaboration with the Stockholm China Center at the Institute for Security and Development Policy (ISDP), Stockholm, Sweden </p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+		    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2020 : </span> Plenary Speaker in National E-Seminar on Ecological Crises and Climate Change in the Himalayan Region, organised by Society for Himalayan Environment and People’s Action (SHERPA) in collaboration with Department of Sociology, University of Lucknow & Ethnographic and Folk Culture Society (EFCS), Lucknow, India </p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+		  
+		  
+		    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2020 : </span> Webinar, on COVID-19 Pandemic Disaster: Water, Agriculture & Environment, organised by Center for Emerging Technologies for Sustainable Development (CETSD), Indian Institute of Technology Jodhpur, India</p>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+									
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2019 : </span> TH Köln University of Applied Sciences, Germany</p>
+                                              
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2019 : </span> Indian Institute of Technology Delhi, India</p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2018 : </span> GIZ (German Development Agency) Headquarters, Eschborn, Germany</p>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+									
+									<!--    Item 01   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2018 : </span> Indian Institute of Technology, Bombay</p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2017 : </span> GIZ Headquaters, Bonn, Germany</p>
+                                               
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2015 : </span>  Humboldt University, Berlin & GIZ (German Development Agency), Germany</p>
+                                                
+                                            </div>
+
+                                        </div>
+                                    </div>
+									<!--    Item 01   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2013 : </span> University of Applied Sciences, Rottenburg, Germany</p>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2013 : </span> Goethe-Institut /Max Mueller Bhavan, New Delhi, India</p>
+                                               
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2013 : </span> German Embassy, New Delhi, India  </p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+									
+									 <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2012 : </span> Indo-German Urban Mela, German Embassy, New Delhi, India</p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2012 : </span> Institute for Technology & Resources Management in the Tropics and Subtropics, Cologne, Germany</p>
+                                           
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+		  
+		  
+		  <br><br>
+		   <h3 class="base-color">Conference, Seminar & Workshop Presentations</h3>
+		   
+		   <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2024 : </span>  Presented paper at the Royal Geographical Society (with IBG) Annual International Conference, at the Imperial College London.</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div><div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2024 : </span> Presented papers at the ISTR Global conference, held at University of Antwerp, Belgium.</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div><div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2023 : </span> Presented a paper at the 19th IUAES-WAU World Anthropology Congress 2023, held at  University of Delhi, Delhi, India.</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+		   <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2023 : </span> Presented Papers and chaired sessions at the XX ISA World Congress of Sociology in Melbourne, Australia.</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+		   <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2023 : </span> Injustice in a World of Uncertainty - World Convention in Mikkeli, Finland, organised by South-Eastern Finland University of Applied Sciences.</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+		  <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2022 : </span> Navigating Uncertain Futures - International Virtual Conference, organised by International Sociological Association and American Sociological
+Association’s on Environmental Sociology.</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+		  <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2022 : </span> Reframing Water and Climate Resilience - Online Symposium, organised by
+University of Reading (UK), The Institute of Development Studies (UK) and European Communication Research and Education Association (ECREA), UK</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+		  <!--    Item 01   -->
+		  <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2022 : </span> Development amidst the COVID-19 Crisis and
+Beyond: Where do we go from here? - International Virtual Conference, organised by CASID (The Canadian Association for the Study of International Development)</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+		  <!--    Item 01   -->
+		  <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2022 : </span> Anthropology in India-Contemporary Debates and Future Possibilities Conference, organised by the IUAES-WAU World Anthropology Pre-Congress 2022, India</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+		  <!--    Item 01   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2021 : </span> Un/Predictable Environments: Politics, Ecology, Agency - International Virtual Conference, organised by Queen's University Belfast (UK), University of British Columbia (Canada), and University of Allahabad (India)</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--    Item 01   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2019 : </span> Asia Pacific Regional Conference (ISTR) Bangkok, Thailand</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2019 : </span> Workshop, Civil Society Dynamics, Kochi, India</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2019 : </span> Workshop, International Institute of Social Studies, Hague, Netherlands </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div> <!--    Item 01   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2017 : </span> Seminar, Indian Institute of Advanced Study (IIAS), Shimla, India</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2014 : </span> CPWF-GBDC-WLE Conference, BRAC, Dhaka, Bangladesh</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2014 : </span>  ETSD 2014, International Sociological Conference</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+									<!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2014 : </span> Deepening Democracy through Participatory Local Governance - Conference, Kerala, India</p>
+                                           
+                                            </div>
+                                        </div>
+                                    </div>                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2013 : </span> Conference, Lahore University of Management Sciences (LUMS), Pakistan</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2013 : </span>  Seminar, Centre for Women’s Studies, Aligarh Muslim University, India</p>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+									<!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2012 : </span> Seminar, University of Hyderabad, India</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2011 : </span> Seminar, Jamia Millia Islamia University, New Delhi, India</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2011 : </span> Seminar, Institute for African and Asian Studies, Humboldt University, Berlin, Germany</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+									<!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2011 : </span> Workshop, Albert-Ludwig University Freiburg, Germany
+</p>
+                                            </div>
+                                        </div>
+                                    </div>                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2010 : </span> Conference, Swiss Federal Institute for Technology, Zurich, Switzerland </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2010 : </span> Conference, International Institute of Social Studies (ISS), Hague, Netherlands</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+									<!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2007 : </span> Seminar, Jawaharlal Nehru University, New Delhi, India</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2007 : </span> Conference, University of Rouen, France</p>
+                                             
+                                            </div>
+                                        </div>
+                                    </div>
+									
+									
+									
+									
+									
+									
+                        
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  </div>
+		  </div>
+		  
+		  
+        </div>
+    </section>
+    <!--   Blog End   -->
+    
+    <!--  Blog Start  -->
+     <section id="teaching" class="section teaching py-5" style="background:rgba(70,130,180, 0.3) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="padding-right: 0px; padding-left: 0px;">
+                    <div class="title-content mb-4">
+                        <h3 class="base-color"  style="color:black !important;">Teaching</h3>
+						
+                                        <div class="timeline-icon data-background" style="border: 1px solid #eee;"></div>
+                    </div>
+                </div>
+            </div>
+			
+            <div class="row">
+                <!--  Item 01 -->
+				<div class="col-lg-12">
+          <h3 class="base-color">Courses taught at Indian Institute of Technology Jodhpur</h3>
+		    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> Introduction to Policy Studies (PG Core) </p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+		    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> Political and Cultural Ecology (UG Core) </p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> Understanding Social Realities (PG Core) </p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> Professional Ethics I (Institute wide compulsory course for UG) </p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> Professional Ethics II (Institute wide compulsory course for UG) </p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                     <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> Ethics and Professional Life  (Institute wide compulsory course for PG)</p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> Disaster Risk Reduction and Management (Curated) (UG Core)</p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> Environment and Development  (Curated) (UG Core)</p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> Indian Society: A Sociological Introduction (Curated) (UG Core) </p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                     <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> Politics of Water Governance  (Curated) (UG + PG Elective)</p>
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">Climate Change and Society (Curated) (UG + PG Elective)</p>
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+									
+									<!--    Item 01   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">Gender and Society (UG + PG Elective)</p> 
+                                                
+                                                
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                   
+		  
+		  
+		  
+		  
+		  
+		  
+		  </div>
+		  </div>
+		  
+		  
+        </div>
+    </section>
+    <!--   teachig End   -->
+
+     <!-- Contact Start -->
+     <section id="contact" class="section contact py-5" style="background:rgba(70,130,180, 0.3) !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="padding-right: 0px; padding-left: 0px;">
+                    <div class="title-content mb-4">
+                        <h3 class="base-color"  style="color:black !important;">Professional Activities</h3>
+						
+                                        <div class="timeline-icon data-background" style="border: 1px solid #eee;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12">
+                   
+									<h3 class="base-color" style="color:# !important;">Workshops Attended</h3>
+								
+									
+										<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2021 : </span> Online two-weeks Capacity Building-cum-Faculty Development Programme on 'Industrialization, Corporate Sector and Development', organised by Institute for Studies in Industrial Development (ISID), New Delhi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+									<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2020 : </span> Workshop - International online workshop on ‘From Ship to Coast: Blue Economy and Sustainable Livelihood’, organised by DWIH (German Centre for Research and Innovation) and German Maritime Museum / Leibniz Institute for Maritime History</p>
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2020 : </span> Workshop - Development Economics organized by International Growth Centre, directed by the London School of Economics (LSE) and University of Oxford, along with the Centre for Development Studies (CDS) Thiruvananthapuram and IIM, Shillong</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2020 : </span> Workshop - International virtual workshop - ‘Improvising Strategies for Social Research: Methodological Concerns’, organised by Indian Anthropological Association & Anthropology Without Borders</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2019 : </span> Workshop - Socio-Economic Impact Assessment of S&T outcomes for Women Scientists/Technologists, Department of Science & Technology (DST), Ministry of Science & Technology in India, Govt. of India</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2016 : </span> Workshop – Agroforestry Adoption & Policy Measures in Central Highlands, Vietnam</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2015 : </span> Training - Gender Norms & Research, International Rice Research Institute (IRRI), Los Baños, Philippines</p>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2014 : </span> Gender training - Research Program on Climate Change Agriculture & Food Security, Southeast Asia, Ho Chi Minh City & Can Tho City, Vietnam</p>
+                                            </div>
+                                        </div>
+                                    </div>                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2014 : </span> Training - Climate Change & Sustainable Natural Resource Management, Centre for Rural Development, Humboldt University, Berlin, Germany</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2014 : </span>  Workshop - Policy Advocacy Training & Planning, IUCN, Bangladesh-India Initiative, New Delhi, India</p>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2013 : </span> Stakeholder Workshop – Water Management & Governance, BRAC, WorldFish & IRRI, Dhaka, Bangladesh</p>
+                                            </div>
+                                        </div>
+                                    </div>  
+
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2013 : </span> Workshop - Coping with Disasters & Climate Extremes, United Nations University-Institute for Environment & Human Security (UNU-EHS), Bonn, Germany</p>
+                                            </div>
+                                        </div>
+                                    </div>  
+
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2013 : </span> Stakeholder Community Partnership Leadership Training – BRAC, WorldFish, IWMI & IRRI, Dhaka, Bangladesh</p>
+                                            </div>
+                                        </div>
+                                    </div>   
+
+									<!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2013 : </span> Workshop - Effective Training Methodologies, GIZ, New Delhi, India</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2013 : </span>  Workshop - Pathways to Sustainability, Institute of Development Studies, University of Sussex, UK
+</p>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2009 : </span> Workshop - Interpretative Data Analysis, Georg-August-University Gottingen, Germany
+</p>
+                                            </div>
+                                        </div>
+                                    </div>                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2008 : </span> Workshop - Role of Vulnerability in Disaster Risk Management, United Nations University-Institute for Environment and Human Security (UNU-EHS) Bonn, Germany</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2007 : </span> Workshop - Intercultural Seminar, Rosbach, Germany</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+									
+									<br><br>
+									 <!--    Item 01   -->
+									<h3 class="base-color">Professional Workshops Conducted</h3>
+									
+										<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2023 : </span> International Conference on Climate Change: A Socio-Geological Perspective at IITJ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2015 : </span> Workshop, Gender Sensitization in Research: Concepts & Tools for Gender Analysis, New Delhi, India</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2015 : </span>  Gender Implementing-Team (GIT) Annual Meeting & Training Workshop, Chiang Mai, Thailand</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2014 : </span> Training Workshop on Gender Sensitization & Awareness in Research: Concepts & Tools for Gender Analysis, Abidjan, Côte d’Ivoire 
+</p>
+                                            </div>
+                                        </div>
+                                    </div> <!--    Item 01   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2014 : </span> Gender Implementing-Team (GIT) Annual Meeting & Training Workshop, HaNoi, Vietnam</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2014 : </span> Training Workshop on Gender Awareness & Methods for Gender Analysis, Lima, Peru</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+									
+										<br><br>
+									 <!--    Item 01   -->
+									<h3 class="base-color">Professional Memberships</h3>
+									<div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">British Association for South Asian Studies</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">Development Studies Association</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">Indian Society for Ecological Economics</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">International Society for Third-Sector Research</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">Canadian Association for the study of International Development</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">Indian Sociological Society</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">Indian Anthropological Association</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">RC11- Sociology of Environment, Indian Sociological Society</p>
+                                            </div>
+                                        </div>
+                                    </div> <!--    Item 01   -->
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">International Sociological Association</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 02   -->
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">RC24 - Environment and Society, International Sociological Association</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+                                    
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+                                        
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">RC39 - Sociology of Disasters, International Sociological Association</p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 03   -->
+									
+                           
+                </div>
+            </div>
+          
+		   
+        </div>
+    </section>
+    <!--  Contact End  -->
+
+
+ <section id="ser" class="section ser " style="background:rgba(70,130,180, 0.3) !important;">
+        <div class="container">
+            <div class="row">
+			  <div class="col-lg-12" style="padding-right: 0px; padding-left: 0px;">
+                    <div class="title-content mb-4">
+                        <h3 class="base-color"  style="color:black !important;">Services</h3>
+						
+                                        <div class="timeline-icon data-background" style="border: 1px solid #eee;"></div>
+                    </div>
+                </div>
+			</div>
+			
+			 <div class="row ">
+                <div class="col-lg-12">
+				
+                                    <!--    Item 01   -->
+									<h3 class="base-color">Reviewer</h3>
+                                    <div class="timeline-item timeline-border" data-color="#ff5380">
+                                       
+                                       
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> Editorial Board Member -  SN Social Sciences Journal (Springer Nature);  
+                                                International Society for Third-Sector Research (ISTR), International Publication Committee; Reviewer: International Journal of Disaster Risk Reduction - Elsevier; Cultural Dynamics - Sage Journal; Journal of Rural Studies - Elsevier; HydroResearch - Elsevier; Environment and Planning E: Nature and Space - Sage</p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+									<!--    Item 01   -->
+									<h3 class="base-color">Institute Service</h3>
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+									
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                               <!-- <p>Member, IITJ Disciplinary Committee  (2023 - Present) </p>
+                                                <p>Member, IITJ Student Wellness Institute Committee (2023 - Present)</p>
+                                                
+                                                <p class="timeline-title">IITJ's Diversity Officer (2023 - Present)</p>
+<p class="timeline-title">IITJ Director's Nominated member of the Institute  Anti-Ragging Committee (2023 - Present)</p>
+                                                <p class="timeline-title">IITJ Director’s Nominated Member in the Committee to initiate the process of Establishing
+School of Liberal Arts (SoLA) (2022)</p>
+                                                 <p class="timeline-title">IITJ Director's Nominated Member of the Vision Coordination Committee of IIT Jodhpur (2021 - 2022)</p>
+                                                <p class="timeline-title">IITJ Director's Nominated Member of the Ethics Committee of IIT Jodhpur (2020 - Present)</p>
+                                                 <p class="timeline-title">IITJ Director's Nominated Member of the Institute Grievance Redressal Committee (2020 - Present)</p>
+                                                <p class="timeline-title"> IITJ Director’s Nominated Member of Internal Complaints Committee for the Prevention of Sexual Harassment of Women at Workplace (2019 - 2022)</p>
+                                           -->
+										   <p>Member, Institute Centralized Furniture Procurement Committee (2024 - Present)</p>
+										   <p>Member, Institute Committee for Evaluation of Best PhD Thesis Award (2024 - Present)</p>
+                                           <p>Institute Diversity Officer (2023 - Present) </p>
+<p>Member, Institute Disciplinary Committee (2023 - Present)</p>
+<p>Member, Institute Student Wellness Committee (2023 – Present)</p>
+<p>Member, Institute Roster Committee (2023 - Present)</p>
+<p>Member, Institute Anti-Ragging Committee (2023 - Present)</p>
+<p>Member, Institute Academic Committee (2022 - Present)</p>
+<p>Member, Institute Executive Committee of the Senate ECS (2022 - Present)</p>
+<p>Member, Institute Senate (2022 - Present)</p>
+<p>Member, Institute Committee to initiate the process of Establishing School of Liberal Arts (2022)</p>
+<p>Member, Institute Ethics Committee (2020 - Present)</p>
+<p>Member, Institute Grievance Redressal Committee (2020 - Present)</p>
+<p>Member, Institute Vision Coordination Committee (2021-22)</p>
+<p>Member, Institute Internal Complaints Committee (2019-22)</p>
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <!--    Item 01   -->
+                                    	<h3 class="base-color">Department Service (HSS/SoLA)</h3>
+                                    <div class="timeline-item timeline-border" data-color="#fbdd62">
+									
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title">Chair, SoLA Committee for Winter School on ‘Frontiers in Computational Social Sciences’ (2023-24)</p>
+                                                <p class="timeline-title">Member, CTFP (Centre for Technology Foresight & Policy) Department Research Committee (2023 - Present)</p>
+                                                <p class="timeline-title">Member, CETSD (Center for Emerging Technology for Sustainable Development) Department Research Committee (2022-23)</p>
+                                                <p class="timeline-title">Chair, SoLA Faculty Appraisal Committee (2023 - Present)</p>
+<p class="timeline-title">Chair, SoLA Academic Audit Report Committee (2023 - Present)</p>
+<p class="timeline-title">Chair, SoLA Open House Padharo 2.0 Task Force (2023)</p>
+<p class="timeline-title">Chair, SoLA Task Force for Exhibition on Quindecennial Celebrations of IITJ (2023)</p>
+<p class="timeline-title">Chair, School Faculty Board Committee (2022 - Present)</p>
+<p class="timeline-title">Chair, SoLA Biannual Newsletter Committee (2022 - Present)</p>
+<p class="timeline-title">Chair, HSS/SoLA Report Review Committee (2022)</p>
+<p class="timeline-title">Chair, SoLA Vision Implementation Core Team (2023 - Present)</p>
+<p class="timeline-title">Chair, SoLA Committee for Winter School on Computational Methods for Social Sciences (2022)</p>
+<p class="timeline-title">Member, M.Sc CSS Admission (2022 - Present)</p>
+<p class="timeline-title">Member, Centre Research Committee of CETSD (2022 - Present)</p>
+<p class="timeline-title">Member, Event management/ Cultural Committee (2022 - Present)</p>
+<p class="timeline-title">Member, Comprehensive Exam Committee (2022 - Present)</p>
+<p class="timeline-title">Member, Budget and LDC Committee (2022 - Present)</p>
+
+
+                                                 <p class="timeline-title">Chair, Department Research Committee (2022)</p>
+                                                 <p class="timeline-title">Faculty Advisor for MSc Computational Social Science (2022)</p>
+                                                 <p class="timeline-title">Chair, Comprehensive Exam Committee (2021 - 2022)</p>
+                                                <p class="timeline-title">Chair, Department Seminars (2021 - 2022)</p>
+                                                 <p class="timeline-title">Member, Vision Implementation Core Team (2021 - Present)</p>
+                                                 <p class="timeline-title">Member, Department/School Research Committee (2021 - Present)</p>
+                                                <p class="timeline-title">Convener, Department Faculty Board (2019-2020)</p>
+                                                <p class="timeline-title">Member, Laboratory Development Committee (2020-2021)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!--    Item 01   -->
+									<h3 class="base-color">Research Grants</h3>
+										<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2024 - 2026 : </span> Digital Pedagogical Tools on Environmental Crises in the Sundarbans, India, (funded by JPN National Center of Excellence in Humanities, IIT Indore), Co-Principal Investigator </p>
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2024 - 2026 : </span> International Research Project on Civil Society in Asia-Pacific funded by International Society for Third Sector Research, Principal Investigator </p>
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2022 - 2023 : </span> Mapping the Waqf in Rajasthan, Ministry of Minority Affairs, Govt. of India, Co-Principal Investigator </p>
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2021 - ongoing : </span> Water Security and Climate Change Adaptation to Desertification, (Young Faculty Award Research Grant), Principal Investigator</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2021 : </span> Shastri Indo-Canadian Institute, Golden Jubilee Conference and Lecture Series Grant (GJCLSG), Principal Investigator</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="timeline-item timeline-border" data-color="#0bceaf">
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> <span style="font-size: 1.1rem;font-weight: 600;"> 2015 - 2016 : </span>  Global Gender Norm Study, North-West Vietnam, (CGIAR funded), Principal Investigator</p>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!--    Item 01  
+									<h3 class="base-color">LANGUAGES</h3>
+                                    <div class="timeline-item timeline-border" data-color="#2dacbb ">
+									
+                                        <div class="timeline-contents">
+                                            <div class="time-line-header">
+                                                <p class="timeline-title"> English, German, Vietnamese, Hindi, Gujarati, Punjabi, Bengali.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+												 -->	
+<br>												 
+<br>												 
+<br>								
+                      
+				</div>
+			</div>
+			
+		<!--	<div class="row" style="margin-bottom:30px;"> 
+			
+  <div class="column">
+    <img src="https://www.w3schools.com//w3images/wedding.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/rocks.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/falls2.jpg" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="https://www.w3schools.com//w3images/underwater.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/ocean.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/wedding.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/mountainskies.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="https://www.w3schools.com//w3images/wedding.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/rocks.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/falls2.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://www.w3schools.com//w3images/underwater.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/ocean.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/wedding.jpg" style="width:100%">
+    <img src="https://www.w3schools.com//w3images/mountainskies.jpg" style="width:100%">
+  </div>
+    
+  </div>
+  -->
+  
+  <div class="row"  style="margin-bottom:0px;">
+ <img src="upload/collage_farhat_naz-min2.png" style="width:100%"><br><br>
+<!-- <div class="gallery" id="gallery">
+        <div class="gallery-item">
+            <div class="content"><img src="upload/11.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/two.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/three.jpg" alt=""></div>   
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/five.jpg" alt=""></div>    
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/six.JPG" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/seven.JPG" alt=""></div>  
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/eight.JPG" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/nine.JPG" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/ten.jpg" alt=""></div>
+        </div>
+          <div class="gallery-item">
+            <div class="content"><img src="upload/13.jpg" alt=""></div>    
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/14.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/15.jpg" alt=""></div>  
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/16.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/17.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/18.jpg" alt=""></div>
+        </div>
+		<div class="gallery-item">
+            <div class="content"><img src="upload/19.jpg" alt=""></div>  
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/20.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/21.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="upload/22.jpg" alt=""></div>
+        </div>
+    </div>-->
+	 <script>
+	 var gallery = document.querySelector('#gallery');
+var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+var resizeAll = function () {
+    var altura = getVal(gallery, 'grid-auto-rows');
+    var gap = getVal(gallery, 'grid-row-gap');
+    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+        var el = item;
+        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+    });
+};
+gallery.querySelectorAll('img').forEach(function (item) {
+    item.classList.add('byebye');
+    if (item.complete) {
+        console.log(item.src);
+    }
+    else {
+        item.addEventListener('load', function () {
+            var altura = getVal(gallery, 'grid-auto-rows');
+            var gap = getVal(gallery, 'grid-row-gap');
+            var gitem = item.parentElement.parentElement;
+            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+            item.classList.remove('byebye');
+        });
+    }
+});
+window.addEventListener('resize', resizeAll);
+gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+    item.addEventListener('click', function () {        
+        item.classList.toggle('full');        
+    });
+});
+
+	 </script>
+  </div> 
+  
+			
+			<div class="row copy-right">
+                <div class="col-12 text-center text-dark">
+                    <p>Copyright © 2020. Designed by <span class="base-color">Qaf Technology</span>
+					</p>
+					
+                </div>
+            </div>
+			</div>
+</section>
+
+
+   
+
+        
+
+
+
+
+    <!--  JavaScripts  -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.4.1.min.js"></script>
+    <!--  Plugin Js  -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- Map Js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcmB207_E3E4SkA8jTA8FQjSWTop9YxZU"></script>
+    <!--  Custom JS  -->
+    <script src="assets/js/arshia.js"></script>
+
+    </body>
+</html>
