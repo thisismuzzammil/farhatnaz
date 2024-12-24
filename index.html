@@ -2687,7 +2687,17 @@ School of Liberal Arts (SoLA) (2022)</p>
       object-fit: cover;
       transition: transform 0.3s ease;
     }
-    
+
+/* Media Query for Mobile View */
+    @media (max-width: 600px) {
+      .image-montage {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      }
+	     .image-montage img {
+      width: 100%;
+      height: 80px !important;
+    }
+    }
   </style>
 <div class="row" style="margin-bottom:30px;display: block;"> 
 		 <div class="image-montage">
