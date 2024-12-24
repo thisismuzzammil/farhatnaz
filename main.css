@@ -1778,7 +1778,12 @@ canvas.particles-js-canvas-el {
       Flat Demo Light
 -------------------------*/
 .flat-demo {
-  background-color: #f8f8f8;
+  background: linear-gradient(
+        to bottom,
+        rgba(255, 153, 51, 0.8),   /* Saffron with 80% opacity */
+        rgba(255, 255, 255, 0.8), /* White with 80% opacity */
+        rgba(19, 136, 8, 0.8)     /* Green with 80% opacity */
+    );
 }
 
 .flat-demo .blog-single .modal-content, .flat-demo .portfolio-single .modal-content {
